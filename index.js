@@ -35,6 +35,26 @@ function radixSort(arr) {
   return arr;
 }
 
+//////////////////////////////////
+// Dynamic programming (top down)
+/////////////////////////////////
+function fibonacci(n, memo = {}) {
+  if (n in memo) return memo[n];
+  if (n <= 1) return n;
+
+  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+  return memo[n];
+}
+
+console.log(fibonacci(10)); // Output: 55
+
+
+
+
+
+
+
+
 // Example usage
 const numbers = [170, 45, 75, 90, 802, 24, 2, 66];
 console.log("Original array:", numbers);
@@ -69,6 +89,25 @@ function quickSort(array) {
 const unsortedArray = [10, 7, 8, 9, 1, 5];
 const sortedArray = quickSort(unsortedArray);
 console.log(sortedArray); // Output: [1, 5, 7, 8, 9, 10]
+
+////////////////////////////////////////
+//Iterative with Tabulation (Bottom-Up):
+////////////////////////////////
+function fibonacci(n) {
+  if (n <= 1) return n;
+
+  let dp = Array(n + 1).fill(0);
+  dp[1] = 1;
+
+  for (let i = 2; i <= n; i++) {
+    dp[i] = dp[i - 1] + dp[i - 2];
+  }
+
+  return dp[n];
+}
+
+console.log(fibonacci(10)); // Output: 55
+
 
 
 import React from 'react';
