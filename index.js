@@ -1,5 +1,26 @@
 
 
+
+import React from 'react';
+import MessageUpdater from './MessageUpdater';
+
+const App = () => {
+  return (
+    <div>
+      <MessageUpdater />
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
 // MathLib.js
 const MathLib = (function () {
     // Private methods (not exposed outside the library)
