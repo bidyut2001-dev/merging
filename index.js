@@ -11,6 +11,15 @@ Enabling this setting will require contributors to sign off on commits made thro
 
 
 
+const testing =`Require contributors to sign off on web-based commits Loading
+Enabling this setting will require contributors to sign off on commits made through GitHub’s web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the Developer Certificate of Origin (DCO). Learn more about signing off on commits.
+
+
+
+
+
+
+
 const myname='bidyut sidker 23 eture/adding_teperal'
 =======
 cosnt day=` git push --set-upstream origin feture/adding_teperalAs comedian Jim Gaffigan said, "Without Valentine's Day, February would be, well, January." We're using this opportunity to share a few products we love, and we hope that you will, too.
