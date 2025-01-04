@@ -1,3 +1,5 @@
+let check='addding text to cheke pull request wihtin the same repository branchs'
+
 let dddnamesss='fdafdfas'
 
 const myname='bidyut sidker 23 eture/adding_teperal'
