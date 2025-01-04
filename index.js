@@ -1,4 +1,32 @@
 
+function quickSort(array) {
+  // Base case: arrays with 0 or 1 element are already sorted
+  if (array.length <= 1) {
+      return array;
+  }
+
+  // Step 1: Choose a pivot
+  const pivot = array[array.length - 1]; // Choosing the last element as pivot
+  const left = []; // Elements less than the pivot
+  const right = []; // Elements greater than the pivot
+
+  // Step 2: Partition the array
+  for (let i = 0; i < array.length - 1; i++) {
+      if (array[i] < pivot) {
+          left.push(array[i]);
+      } else {
+          right.push(array[i]);
+      }
+  }
+
+  // Step 3: Recursively sort left and right subarrays, then combine
+  return [...quickSort(left), pivot, ...quickSort(right)];
+}
+
+// Example usage
+const unsortedArray = [10, 7, 8, 9, 1, 5];
+const sortedArray = quickSort(unsortedArray);
+console.log(sortedArray); // Output: [1, 5, 7, 8, 9, 10]
 
 
 import React from 'react';
