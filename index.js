@@ -1,3 +1,45 @@
+function radixSort(arr) {
+  if (arr.length === 0) return arr;
+
+  // Helper function to get the digit at a specific position
+  const getDigit = (num, place) => Math.floor(Math.abs(num) / Math.pow(10, place)) % 10;
+
+  // Helper function to count the number of digits in a number
+  const digitCount = (num) => num === 0 ? 1 : Math.floor(Math.log10(Math.abs(num))) + 1;
+
+  // Helper function to find the maximum number of digits in the array
+  const mostDigits = (nums) => {
+      let maxDigits = 0;
+      for (let num of nums) {
+          maxDigits = Math.max(maxDigits, digitCount(num));
+      }
+      return maxDigits;
+  };
+
+  const maxDigitCount = mostDigits(arr);
+
+  for (let k = 0; k < maxDigitCount; k++) {
+      // Create buckets for each digit (0-9)
+      let digitBuckets = Array.from({ length: 10 }, () => []);
+
+      // Place each number in the corresponding bucket
+      for (let num of arr) {
+          const digit = getDigit(num, k);
+          digitBuckets[digit].push(num);
+      }
+
+      // Flatten the buckets back into the array
+      arr = [].concat(...digitBuckets);
+  }
+
+  return arr;
+}
+
+// Example usage
+const numbers = [170, 45, 75, 90, 802, 24, 2, 66];
+console.log("Original array:", numbers);
+const sorted = radixSort(numbers);
+console.log("Sorted array:", sorted);
 
 function quickSort(array) {
   // Base case: arrays with 0 or 1 element are already sorted
