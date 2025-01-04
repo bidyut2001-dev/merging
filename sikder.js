@@ -1,7 +1,7 @@
 
 
 
-const dds=`Counting objects: 100% (4/4), done.
+const dds=`Countfdfing objects: 100% (4/4), done.
 Delta compression using up to 12 threads
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 503 bytes | 503.00 KiB/s, done.
