@@ -1,12 +1,6 @@
 
+const myname='bidyut sidker 23'
 
-const ewgggge=`g
-bidyut
-bidyut
-bidyut
-bidyut
-bidyut
-}`
 function radixSort(arr) {
   if (arr.length === 0) return arr;
 
@@ -47,13 +41,13 @@ function radixSort(arr) {
 //////////////////////////////////
 // Dynamic programming (top down)
 /////////////////////////////////
-function fibonacci(n, memo = {}) {
-  if (n in memo) return memo[n];
-  if (n <= 1) return n;
+const bidyut=`Device: Chrome on Linux
+Verification code: 601978
 
-  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
-  return memo[n];
-}
+If you did not attempt to sign in to your account, your password may be compromised. Visit https://github.com/settings/security to create a new, strong password for your GitHub account.
+
+If you'd like to automatically verify devices in the future, consider enabling two-factor authentication on your account. Visit https://docs.github.com/articles/configuring-two-factor-authentication to learn about two-factor authentication.
+`
 
 console.log(fibonacci(10)); // Output: 55
 
