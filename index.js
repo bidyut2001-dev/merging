@@ -50,7 +50,27 @@ console.log(fibonacci(10)); // Output: 55
 
 
 
-
+const ewe=`g
+gsgdsgfgfdsgsg
+gs
+gs
+gsfffffffffff
+fd
+fd
+fd
+f
+affffffffffffffffffff
+f
+df
+adf
+ad
+const ds
+fdf = () => {
+  return (  );
+}
+ 
+export default ds
+fdf;`
 
 
 
