@@ -1,5 +1,5 @@
 
-const myname='bidyut sidker 23'
+const myname='bidyut sidker 23 eture/adding_teperal'
 
 function radixSort(arr) {
   if (arr.length === 0) return arr;
